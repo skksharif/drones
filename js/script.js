@@ -1,12 +1,10 @@
 function toggleMenu() {
-    const navbar = document.querySelector('nav');
-    navbar.classList.toggle('show');
-    const navItems = document.querySelectorAll('nav a');
-
-    navItems.forEach(item => {
-        item.classList.toggle('show-navitems');
-    });
-    const menuIcon = document.querySelector('.menu-icon');
-    menuIcon.classList.toggle('close');
+  const navbar = document.querySelector('.navbar');
+  const menuIcon = document.querySelector('.menu-icon');
+  
+  // Toggle the menu visibility
+  navbar.classList.toggle('show');
+  
+  // Toggle the close icon
+  menuIcon.classList.toggle('close');
 }
-
