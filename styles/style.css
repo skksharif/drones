@@ -7,47 +7,121 @@
 }
 
 body {
-  background: linear-gradient(180deg, #0b0b0b, #1c1c1c);
-  color: #f1f1f1;
   line-height: 1.6;
   overflow-x: hidden;
 }
+.notification-bar {
+  display: flex;
+  align-items: center;
+  background-color: #b71c1c; /* Dark red background */
+  color: white;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.title-notification{
+  background: url("../images/chevron.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #f9a825; /* Yellow background */
+  position: relative;
+}
+
+.notification-content {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Yellow background */
+  padding: 0 10px;
+}
+
+.notification-content strong {
+  margin-right: 10px;
+  background-color: #f9a825;
+  padding: 0 20px;
+}
+
+marquee {
+  flex: 1;
+  font-size: 16px;
+  white-space: nowrap;
+  color: white;
+}
+
+.highlight {
+  font-weight: bold;
+}
 
 .courses .slick-slide {
-  margin: 0 20px;
+  margin: 20px 20px;
 }
+.courses .slick-prev::before,
+.slick-next::before {
+  color: rgb(20, 20, 20); /* Change to your desired color */
+  font-size: 20px; /* Optional: Adjust size */
+}
+
 /* Courses */
 .courses {
   padding: 10px 20px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #0b0b0b;
+}
+.courses-cards {
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .courses h2 {
   font-size: 2.5em;
   color: #d32f2f;
   font-family: "Arial", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
+.courses-cards h2 {
+  font-size: 2.5em;
+  color: #d32f2f;
+  font-family: "Arial", sans-serif;
+}
 .course-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
   width: 100%;
   max-width: 1200px;
-  padding: 10px;
+  padding: 20px 10px;
+  margin: 10px 0;
+}
+
+.courses-cards .course-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 55px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px 10px;
   margin: 10px 0;
 }
 
 .course-item {
-  background: #1c1c1c;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -70,13 +144,13 @@ body {
 .course-item p {
   font-size: 1em;
   margin-bottom: 15px;
-  color: #ccc;
+  color: #444343;
   line-height: 1.5;
 }
 
 .course-item a {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 5px 10px;
   color: #fff;
   background: linear-gradient(to right, #d32f2f, #b71c1c);
   text-decoration: none;
@@ -222,7 +296,6 @@ body {
   font-size: 2.5em;
   color: #d32f2f;
   font-family: "Arial", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .inner-form {
@@ -249,7 +322,6 @@ body {
 form {
   flex: 2;
   padding: 20px;
-  background-color: #101010;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 500px;
@@ -272,8 +344,6 @@ input[type="tel"],
 textarea {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
-  background-color: #2a2a2a;
   border: 1px solid #770000;
   border-radius: 5px;
   box-sizing: border-box;
