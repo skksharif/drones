@@ -60,4 +60,44 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    .footer h3 {
+      font-size: 1em;
+      margin-bottom: 15px;
+      color: #d32f2f;
+    }
+    
+    .footer ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    
+    .footer ul li {
+      margin-bottom: 5px;
+      font-size: 0.8em;
+    }
+    
+    .footer ul a {
+       text-decoration: none;
+      color: #f1f1f1;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .footer ul a:hover {
+      color: #d32f2f;
+    }
+    
+    .footer .social-icons a {
+      color: #f1f1f1;
+      font-size: 1.2em;
+      margin: 0 10px;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .footer .social-icons a:hover {
+      color: #d32f2f;
+    }
+    
+    .footer-bottom {
+      font-size: 0.7em;
+    }
 }

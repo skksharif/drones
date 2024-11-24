@@ -30,8 +30,7 @@ header p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
-  background: #1c1c1c;
+  background-color: aliceblue;
   top: 0;
   position: sticky;
   z-index: 999;
@@ -40,6 +39,7 @@ header p {
 .navbar img {
   width: 80px;
   height: auto;
+  margin: 5px 10px;
 }
 
 .navbar nav {
@@ -50,8 +50,9 @@ header p {
 
 .navbar nav a {
   text-decoration: none;
-  color: #f1f1f1;
-  padding: 8px 12px;
+  color: #2a2a2a;
+  padding: 2px 12px;
+  font-weight: bold;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
@@ -67,12 +68,13 @@ header p {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  margin: 5px 10px;
 }
 
 .menu-icon .bar {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #434343;
   transition: all 0.3s ease-in-out;
 }
 
@@ -91,9 +93,9 @@ header p {
   .navbar nav {
     display: none;
     flex-direction: column;
-    background: #1c1c1c;
+    background: aliceblue;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
     width: 100%;
     padding: 10px 0;
