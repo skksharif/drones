@@ -99,31 +99,37 @@ footer {
     width: 90%;
   }
 }
+.courses1 {
+  background-color: aliceblue;
+  padding: 10px 0;
+}
 .courses1 h2 {
-    font-size: 2em;
-    padding: 5px 10px;
-    color: #d32f2f;
-    text-align: left;
-    font-family: "Arial", sans-serif;
-  }
+  font-size: 2em;
+  padding: 5px 10px;
+  color: #d32f2f;
+  text-align: left;
+  font-family: "Arial", sans-serif;
+}
 .courses1-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: start;
-  padding: 20px;
-  background-color: #f9f9f9;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .courses1-card {
-  width: 300px; /* Default size for larger screens */
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  margin: 20px 10px;
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgb(255, 188, 188);
+  transition: transform 0.8s ease !important;
 }
 
 .courses1-card:hover {
@@ -138,28 +144,24 @@ footer {
 }
 
 .courses1-title {
-  font-size: 1.5rem;
-  margin: 15px;
-  color: #333;
-  text-align: center;
+  color: #a70000;
+  text-align: left;
 }
 
 .courses1-description {
   font-size: 1rem;
-  margin: 0 15px 15px;
-  color: #666;
-  text-align: center;
+  margin: 0  0 15px 0;
+  text-align: left;
 }
 
 .courses1-button {
   display: block;
-  width: calc(100% - 30px);
-  margin: 0 auto 15px;
-  padding: 10px 15px;
-  font-size: 1rem;
+  width: calc(50% - 30px);
+  padding: 5px px;
+  font-size: 14px;
   background-color: white;
   color: red;
-  border:1px solid #b20000;
+  border: 1px solid #b20000;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
