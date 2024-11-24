@@ -2,7 +2,7 @@
   font-size: 2em;
   padding: 10px 10px;
   color: #d32f2f;
-  text-align: left;
+  text-align: center;
   font-family: "Arial", sans-serif;
 }
 .about-section {
@@ -25,7 +25,7 @@
 
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 50px 20px;
   background: #fff;
@@ -55,18 +55,11 @@
   margin-bottom: 15px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #004d7a;
-  color: #fff;
-}
-
 /* Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
   to {
     opacity: 1;
@@ -107,7 +100,7 @@ footer {
   font-size: 2em;
   padding: 5px 10px;
   color: #d32f2f;
-  text-align: left;
+  text-align: center;
   font-family: "Arial", sans-serif;
 }
 .courses1-container {

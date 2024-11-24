@@ -94,7 +94,7 @@ marquee {
 }
 
 .courses .slick-slide {
-  margin: 20px 10px;
+  margin: 20px 20px;
 }
 .courses .slick-prev::before,
 .slick-next::before {
@@ -103,7 +103,6 @@ marquee {
 }
 .slick-center {
   transform: scale(1.1);
-  box-shadow: 0 0 15px 0 rgb(255, 148, 148);
   z-index: 10;
 }
 .slick-slide {
@@ -154,11 +153,6 @@ marquee {
   .course-items {
     grid-template-columns: 1fr; /* Single column layout */
   }
-  .slick-center {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px 0 rgb(255, 148, 148);
-    z-index: 10;
-  }
   .course-item {
     width: 100px !important;
     height: auto !important;
@@ -197,7 +191,7 @@ marquee {
   font-size: 2em;
   padding: 5px 10px;
   color: #d32f2f;
-  text-align: left;
+  text-align: center;
   font-family: "Arial", sans-serif;
 }
 .service-items {
@@ -374,7 +368,7 @@ marquee {
   font-size: 2em;
   padding: 20px 10px;
   color: #d32f2f;
-  text-align: left;
+  text-align: center;
   font-family: "Arial", sans-serif;
 }
 
