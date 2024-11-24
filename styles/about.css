@@ -157,7 +157,7 @@ footer {
 .courses1-button {
   display: block;
   width: calc(50% - 30px);
-  padding: 5px px;
+  padding: 5px;
   font-size: 14px;
   background-color: white;
   color: red;
