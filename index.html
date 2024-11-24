@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/courses.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
@@ -51,7 +52,7 @@
         <nav>
             <a href="./index.html">Home</a>
             <a href="#">Products</a>
-            <a href="#">Drone Devices</a>
+            <a href="#services" onclick="toggleMenu()">Services</a>
             <!--
                <div class="dropdown">
                 <button class="dropbtn">XXXX</button>
@@ -60,9 +61,9 @@
                 </div>
             </div>
              -->
-            <a href="#">Courses</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#courses" onclick="toggleMenu()">Courses</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
         </nav>
     </div>
 
@@ -153,7 +154,7 @@
             <img src="./images/banners/2.png" alt="">
         </div>
     </div>
-
+    <div id="services" style="padding-bottom: 40px;background-color: aliceblue;"></div>
     <!--Services-->
     <div class="services">
         <h2>Services</h2>
@@ -252,10 +253,114 @@
         <div class="video-overlay" data-aos="fade-up">
             <h1>Welcome to Drone Training</h1>
             <a href="#" class="join-button">Join Now</a>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div id="courses"></div>
+    <br>
+    <br>
+    <!--Courses-->
+    <div class="courses1">
+        <h2>Courses</h2>
+        <div class="courses1-container">
+            <div class="courses1-card">
+                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
+                <h3 class="courses1-title">Drone Basics</h3>
+                <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+    
+            <div class="courses1-card">
+                <img src="./images/drones/inc.png" alt="Aerial Photography" class="courses1-image">
+                <h3 class="courses1-title">Aerial Photography</h3>
+                <p class="courses1-description">Master drone-based photography and videography techniques.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+    
+            <div class="courses1-card">
+                <img src="./images/drones/map.png" alt="Drone Programming" class="courses1-image">
+                <h3 class="courses1-title">Drone Programming</h3>
+                <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+            <div class="courses1-card">
+                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
+                <h3 class="courses1-title">Drone Basics</h3>
+                <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+    
+            <div class="courses1-card">
+                <img src="./images/drones/inc.png" alt="Aerial Photography" class="courses1-image">
+                <h3 class="courses1-title">Aerial Photography</h3>
+                <p class="courses1-description">Master drone-based photography and videography techniques.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+    
+            <div class="courses1-card">
+                <img src="./images/drones/map.png" alt="Drone Programming" class="courses1-image">
+                <h3 class="courses1-title">Drone Programming</h3>
+                <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+            <div class="courses1-card">
+                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
+                <h3 class="courses1-title">Drone Basics</h3>
+                <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
+    
+            <div class="courses1-card">
+                <img src="./images/drones/inc.png" alt="Aerial Photography" class="courses1-image">
+                <h3 class="courses1-title">Aerial Photography</h3>
+                <p class="courses1-description">Master drone-based photography and videography techniques.</p>
+                <button class="courses1-button">Enroll Now</button>
+            </div>
         </div>
     </div>
 
+    <!--About-->
+    <div id="about"></div>
+    <br>
+    <br>
+    <div class="about">
+        <h2>About Us</h2>
 
+        <section class="about-section" data-aos="fade-down">
+            <div class="content">
+                <h3>Who We Are</h3>
+                <p>At NextGen Drones, we redefine possibilities with cutting-edge drone technology. From breathtaking
+                    aerial photography to precision inspections, we deliver innovative solutions to elevate your vision.
+                </p>
+            </div>
+            <div class="image">
+                <img src="./images/drones/drone2.png" alt="Flying Drone Animation">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature" data-aos="fade-down">
+                <img src="./images/drones/arail.png" alt="Aerial Photography">
+                <h3>Aerial Photography</h3>
+                <p>Capture stunning landscapes and moments from above.</p>
+            </div>
+            <div class="feature" data-aos="fade-down">
+                <img src="./images/drones/inc.png" alt="Inspection Services">
+                <h3>Inspection Services</h3>
+                <p>Enhance safety and efficiency with precision aerial inspections.</p>
+            </div>
+            <div class="feature" data-aos="fade-down">
+                <img src="./images/drones/map.png" alt="Mapping and Surveys">
+                <h3>Mapping & Surveys</h3>
+                <p>Accurate data collection for planning and development.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact"></div>
+    <br>
     <!--Contact Form-->
     <h2 class="contact-form-h">Contact With Us</h2>
     <div class="contact-form">
@@ -286,7 +391,6 @@
         </div>
 
     </div>
-
 
     <!--Footer-->
     <footer class="footer">
@@ -351,7 +455,7 @@
             {
                 breakpoint: 1268,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     centerMode: true,
                     centerPadding: '0',
                     slidesToShow: 5
@@ -360,7 +464,7 @@
             {
                 breakpoint: 1168,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     centerMode: true,
                     centerPadding: '0',
                     slidesToShow: 3
@@ -369,7 +473,7 @@
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     centerMode: true,
                     centerPadding: '0',
                     slidesToShow: 3
