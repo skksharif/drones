@@ -106,7 +106,6 @@ main {
     background: #b71c1c;
 }
 
-/* Responsive Typography */
 @media (max-width: 768px) {
     .section h2 {
         font-size: 1.8rem;

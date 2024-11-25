@@ -7,7 +7,7 @@
   text-align: center;
 }
 .about h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -115,7 +115,7 @@
   text-align: center;
 }
 .courses1 h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -136,7 +136,7 @@
   height: auto;
   margin: 20px 10px;
   background: #fff;
-  padding: 10px 10px;
+  padding: 15px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -148,8 +148,8 @@
 }
 
 .courses1-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
 .courses1-image {
@@ -159,14 +159,17 @@
 }
 
 .courses1-title {
-  color: #a70000;
-  text-align: left;
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin-bottom: 10px;
+  margin-top: 8px;
 }
 
 .courses1-description {
   font-size: 1rem;
-  margin: 0 0 15px 0;
-  text-align: left;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .courses1-button {
@@ -327,5 +330,67 @@ svg text {
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
+  }
+}
+.border-design {
+  position: relative;
+  margin-top: -10px;
+  height: 40px;
+  background: white;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1), 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+.border-design::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: rotate(180deg);
+  margin-top: 40px;
+  margin-left: -50px;
+  width: 100px;
+  height: 30px;
+  transform: rotate(180deg);
+  background: white;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.about-drones {
+  background-color: #f20000; /* Light background for contrast */
+  padding: 40px;
+}
+.drones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.drones-image img {
+  max-width: 480px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.drones-content{
+  max-width: 800px;
+}
+.drones-content h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.drones-content p {
+  color: #fffefe;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+@media (max-width:786px){
+  .drones-image img {
+    max-width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 }
