@@ -24,7 +24,7 @@ main {
 
 .section h2 {
     font-size: 2.2rem;
-    color: #d32f2f;
+    color: #a51c24;
     text-transform: uppercase;
     margin-bottom: 15px;
     position: relative;
@@ -35,7 +35,7 @@ main {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #d32f2f;
+    background-color: #a51c24;
     margin: 10px auto;
 }
 
@@ -47,10 +47,11 @@ main {
 
 /* Grid Container */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:start;
+  flex-wrap: wrap;
 }
 
 /* Card Styles */
@@ -60,7 +61,7 @@ main {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    text-align: start;
     max-width: 300px;
 }
 
@@ -77,21 +78,50 @@ main {
 
 .card h3 {
     font-size: 1.2rem;
-    color: #d32f2f;
-    margin: 15px 0 10px 0;
+    color: #a51c24;
+    margin: 5px 0 5 0;
 }
 
-.card p {
+.card  {
     font-size: 0.95rem;
     color: #555;
     margin-bottom: 20px;
     padding: 0 15px;
     line-height: 1.5;
 }
+.card p{
+  margin: 0;
+}
+
+.card ul{
+  list-style: none;
+  margin-bottom: 5px;
+}
+.product-description {
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease-in-out;
+}
+
+.products-read-more {
+  display: block;
+  margin: 0px 0 10px 0;
+  padding: 0;
+  background-color: transparent;
+  color: #a51c24;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.products-read-more:hover{
+  text-decoration: underline;
+  background-color: white;
+}
+
 
 .card .btn {
     display: inline-block;
-    background: #d32f2f;
+    background: #a51c24;
     color: #fff;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -103,7 +133,7 @@ main {
 }
 
 .card .btn:hover {
-    background: #b71c1c;
+    background: #a51c24;
 }
 
 @media (max-width: 768px) {
@@ -137,7 +167,7 @@ main {
   flex-direction: column;
   gap: 12px;
   z-index: 998;
-  background-color: red;
+  background-color: #a51c24;
   border-radius: 20px  0 0 20px;
 }
 
@@ -155,7 +185,7 @@ main {
 
 .fixed-social-links .social-link:hover {
   background-color: #ddd;
-  color: #ff0d00; /* Accent color on hover */
+  color: #a51c24; /* Accent color on hover */
   transform: scale(1.05);
 }
 
@@ -188,4 +218,110 @@ main {
   .fixed-social-links {
     gap: 10px; /* Reduce spacing between icons */
   }
+}
+
+/* General Layout */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+/* Product Card */
+.product-card {
+  width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  background: #fff;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease !important;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3{
+  font-size: 1.3rem;
+  color: #ff0000;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.product-card .price {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.product-card .details {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+  list-style: none;
+}
+
+.product-card .btn {
+  display: block;
+  width: calc(50% - 30px);
+  padding: 5px;
+  font-size: 14px;
+  background-color: white;
+  color: red;
+  border: 1px solid #b20000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background: #b30c00;
+  color: #fff;
+}
+
+/* Read More Button */
+.details {
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease-in-out;
+}
+.read-more-button {
+  display: block;
+  margin: 5px 0;
+  background-color: transparent;
+  color: #ae2525;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+  background-color: white;
 }
