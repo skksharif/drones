@@ -211,7 +211,6 @@ marquee {
 }
 .service-items {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -220,10 +219,15 @@ marquee {
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  
 }
-.flip-card img{
-  object-fit: cover;
+.flip-card img {
+  width: 100%; /* Make the image take up the full width of the card */
+  height: 100%; /* Make the image fill the height of the card */
+  object-fit: cover; /* Ensure the image is cropped to fit properly */
+  border-radius: 10px; /* Optional: Add rounded corners if desired */
 }
+
 
 .flip-card-inner {
   position: relative;
@@ -232,7 +236,7 @@ marquee {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -245,10 +249,10 @@ marquee {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
@@ -260,6 +264,11 @@ marquee {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width:1100px) {
+  .service-items {
+    flex-wrap: wrap;
+  }
 }
 
 /*Banners*/
