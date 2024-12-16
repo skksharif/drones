@@ -15,7 +15,7 @@ body {
 .notification-bar {
   display: flex;
   align-items: center;
-  background-color: rgb(165,28,36); /* Dark red background */
+  background-color: #a12d33; /* Dark red background */
   color: white;
   padding: 0;
   height: 40px;
