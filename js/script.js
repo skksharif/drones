@@ -1,20 +1,14 @@
 function toggleMenu() {
-  const navbar = document.querySelector('.navbar');
-  const menuIcon = document.querySelector('.menu-icon');
-  navbar.classList.toggle('show');
-  menuIcon.classList.toggle('close');
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const loadingMessage = document.getElementById("loading-message");
-
-  setTimeout(() => {
-      loadingMessage.classList.add("hidden");
-      setTimeout(() => {
-          loadingMessage.style.display = "none";
-      }, 500); 
-  }, 3000);
-});
+    const navbar = document.querySelector('.navbar');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    // Toggle the `show` class on the navbar
+    navbar.classList.toggle('show');
+    
+    // Toggle the `close` class on the menu icon for the animation
+    menuIcon.classList.toggle('close');
+  }
+  
 
 document.querySelectorAll('.courses1-read-more').forEach(button => {
   button.addEventListener('click', () => {

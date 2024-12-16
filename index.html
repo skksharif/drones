@@ -28,7 +28,6 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/courses.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -46,13 +45,14 @@
         <a href="https://instagram.com" target="_blank" class="social-link instagram-link">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://whatsapp.com" target="_blank" class="social-link whatsapp-link">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+
         <a href="https://linkedin.com" target="_blank" class="social-link linkedin-link">
             <i class="fab fa-linkedin-in"></i>
         </a>
     </div>
+    <a href="https://wa.me/1234567890" class="whatsapp-icon" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="./images/whatsapp.png" alt="WhatsApp">
+      </a>
 
     <header>
         <h1>AGROSKY DRONE ASPIRANT PRIVATE LIMITED</h1>
@@ -61,6 +61,7 @@
     <div class="navbar" id="mynav">
         <a href="./index.html" id="optional">
             <img src="./images/logo.png" alt="LOGO">
+            <h2 class="logo-text">#NEXTGENDRONES</h2>
         </a>
         <div class="responsive">
             <div class="menu-icon" onclick="toggleMenu()">
@@ -73,14 +74,6 @@
             <a href="./index.html">Home</a>
             <a href="./products.html">Products</a>
             <a href="#services" onclick="toggleMenu()">Services</a>
-            <!--
-               <div class="dropdown">
-                <button class="dropbtn">XXXX</button>
-                <div class="dropdown-content">
-                    <a href="./cricket.html">YYYY</a>
-                </div>
-            </div>
-             -->
             <a href="#courses" onclick="toggleMenu()">Courses</a>
             <a href="#about" onclick="toggleMenu()">About</a>
             <a href="#contact" onclick="toggleMenu()">Contact</a>
@@ -88,64 +81,125 @@
     </div>
 
     <!--Courses-->
-    <div class="courses">
-        <div class="course-items center-mode">
-            <div class="course-item">
-                <img src="./images/courses/c1.png" alt="Course 1">
-                <h3>Item 1</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c2.png" alt="Course 2">
-                <h3>Item 2</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c3.png" alt="Course 3">
-                <h3>Item 3</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c4.png" alt="Course 3">
-                <h3>Item 4</h3>
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c1.png" alt="Course 1">
-                <h3>Item 1</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c2.png" alt="Course 2">
-                <h3>Item 2</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c3.png" alt="Course 3">
-                <h3>Item 3</h3>
-
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
-            <div class="course-item">
-                <img src="./images/courses/c4.png" alt="Course 3">
-                <h3>Item 4</h3>
-                <p>₹999/-</p>
-                <a href="#">Join Now</a>
-            </div>
+  <div class="courses">
+    <div class="course-items center-mode">
+        <div class="course-item">
+            <img src="./images/products/p1.jpg" alt="Drone Model 1">
+            <h3>Agricultural Drone Frame</h3>
+            <p>₹49,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p1.jpg" alt="Drone Model 2">
+            <h3>Agricultural Drone Frame</h3>
+            <p>₹52,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p2.jpg" alt="Drone Model 3">
+            <h3>EFT Drone Frame</h3>
+            <p>₹42,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p3.jpg" alt="Drone Model 4">
+            <h3>S500 Drone Frame</h3>
+            <p>₹5,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p4.jpg" alt="Landing Gear Bar">
+            <h3>Landing Gear Bar</h3>
+            <p>₹5,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p5.jpg" alt="Propeller">
+            <h3>HX83011 Propeller</h3>
+            <p>₹5,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p6.jpg" alt="Hobbywing X6 Plus">
+            <h3>X6 Plus 2480 Propellers</h3>
+            <p>₹5,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p7.jpg" alt="NAZA M V2">
+            <h3>NAZA MV2&GPS</h3>
+            <p>₹5,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p10.jpg" alt="Pixhawk Flight Controller">
+            <h3>Flight Controller</h3>
+            <p>₹18,999/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p11.jpg" alt="Pixhawk Cube">
+            <h3>Cube Flight Controller</h3>
+            <p>₹33,999/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p12.jpg" alt="K++ V2 Controller">
+            <h3>K++V2 Controller Kit</h3>
+            <p>₹34,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p13.jpg" alt="K3 Apro Controller">
+            <h3>Flight Controller Kit</h3>
+            <p>₹19,800/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p14.jpg" alt="Hobbywing X9 Plus">
+            <h3>X9 Plus 36190 Drone Motors</h3>
+            <p>₹13,900/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p15.jpg" alt="Hobbywing XRotor X6 Plus">
+            <h3>Folding Propeller</h3>
+            <p>₹16,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p16.jpg" alt="Hobbywing X8 Motor">
+            <h3>Folding Propeller</h3>
+            <p>₹899/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p17.jpg" alt="Dual Head Spray Nozzle">
+            <h3>Extended Spray Nozzle</h3>
+            <p>₹899/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p18.jpg" alt="Dual Header Y-Type Spray Nozzle">
+            <h3>Y-Type Spray Nozzle</h3>
+            <p>₹14,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p19.jpg" alt="Centrifugal Nozzles">
+            <h3>Centrifugal Nozzles</h3>
+            <p>₹14,000/-</p>
+            <a href="./products.html">Know More</a>
+        </div>
+        <div class="course-item">
+            <img src="./images/products/p20.jpg" alt="S550 Drone Frame">
+            <h3>S550 Drone Frame</h3>
+            <p>₹8,600/-</p>
+            <a href="./products.html">Know More</a>
         </div>
     </div>
+</div>
+
     <div class="notification-bar">
         <div class="notification-content">
             <marquee behavior="scroll" direction="left">
@@ -164,69 +218,147 @@
         <div class="banner">
             <img src="./images/banners/1.png" alt="">
         </div>
-    
     </div>
     <div class="border-design"></div>
 
     <!--Services-->
-    <div id="services" style="padding-bottom: 60px;background-color: aliceblue;"></div>
+    <div id="services" style="padding-bottom: 60px;background-color: rgb(245, 245, 245);"></div>
     <div class="services">
         <h2>Drone Services</h2>
         <div class="service-items">
             <!-- Drone Mapping Service -->
-            <div class="service-item" data-aos="fade-down">
-                <img src="./images/drones/map.png" alt="Drone Mapping">
-                <div class="service-content">
-                    <h3>Precision Mapping</h3>
-                    <p>Accurate aerial mapping for farms, ensuring optimal crop management and planning.</p>
-                    <p>Accurate aerial mapping for farms, ensuring optimal crop management and planning.</p>
-                    <a href="#">Request Now</a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/services/crop-spraying.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Crop Spraying</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia suscipit placeat
+                            blanditiis maiores architecto illum numquam autem aliquam labore! Asperiores repudiandae
+                            soluta provident minima numquam voluptate perspiciatis, nisi fuga.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Drone Delivery Service -->
-            <div class="service-item" data-aos="fade-down">
-                <img src="./images/drones/inc.png" alt="Drone Delivery">
-                <div class="service-content">
-                    <h3>Drone Delivery</h3>
-                    <p>Efficient delivery of agricultural supplies to remote locations with minimal effort.</p>
-                    <p>Efficient delivery of agricultural supplies to remote locations with minimal effort.</p>
-                    <a href="#">Request Now</a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/services/plane.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Crop Spraying</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia suscipit placeat
+                            blanditiis maiores architecto illum numquam autem aliquam labore! Asperiores repudiandae
+                            soluta provident minima numquam voluptate perspiciatis, nisi fuga.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Aerial Surveillance Service -->
-            <div class="service-item" data-aos="fade-down">
-                <img src="./images/drones/arail.png" alt="Aerial Surveillance">
-                <div class="service-content">
-                    <h3>Aerial Surveillance</h3>
-                    <p>Real-time monitoring of crops, livestock, and fields with high-resolution imagery.</p>
-                    <p>Real-time monitoring of crops, livestock, and fields with high-resolution imagery.</p>
-                    <a href="#">Request Now</a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/services/crop-monitor.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Crop Spraying</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia suscipit placeat
+                            blanditiis maiores architecto illum numquam autem aliquam labore! Asperiores repudiandae
+                            soluta provident minima numquam voluptate perspiciatis, nisi fuga.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Drone Crop Spraying Service -->
-            <div class="service-item" data-aos="fade-down">
-                <img src="./images/drones/inc.png" alt="Crop Spraying">
-                <div class="service-content">
-                    <h3>Crop Spraying</h3>
-                    <p>Precision spraying of fertilizers and pesticides, reducing waste and improving yield.</p>
-                    <p>Precision spraying of fertilizers and pesticides, reducing waste and improving yield.</p>
-                    <a href="#">Request Now</a>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/services/fire-fighting.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Crop Spraying</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia suscipit placeat
+                            blanditiis maiores architecto illum numquam autem aliquam labore! Asperiores repudiandae
+                            soluta provident minima numquam voluptate perspiciatis, nisi fuga.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Content-->
+
+
+
+    <!--Courses-->
+    <div id="courses" style="padding-bottom: 40px;background-color: rgb(245, 245, 245);"></div>
+    <div class="courses1">
+        <h2>Courses</h2>
+        <div class="courses1-container">
+            <div class="courses1-card" data-aos="fade-down">
+                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
+                <div class="course1-content">
+                    <h3 class="courses1-title">Drone Basics</h3>
+                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.
+                    </p>
+                    <div class="courses1-extra">
+                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
+                    </div>
+                    <button class="courses1-read-more">Read More</button>
+                    <button class="courses1-button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="courses1-card" data-aos="fade-down">
+                <img src="./images/drones/inc.png" alt="Aerial Photography" class="courses1-image">
+                <div class="course1-content">
+                    <h3 class="courses1-title">Arial Photography</h3>
+                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.
+                    </p>
+                    <div class="courses1-extra">
+                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
+                    </div>
+                    <button class="courses1-read-more">Read More</button>
+                    <button class="courses1-button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="courses1-card" data-aos="fade-down">
+                <img src="./images/drones/map.png" alt="Drone Programming" class="courses1-image">
+                <div class="course1-content">
+                    <h3 class="courses1-title">Drone Programming</h3>
+                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.
+                    </p>
+                    <div class="courses1-extra">
+                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
+                    </div>
+                    <button class="courses1-read-more">Read More</button>
+                    <button class="courses1-button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="courses1-card" data-aos="fade-down">
+                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
+                <div class="course1-content">
+                    <h3 class="courses1-title">Drone Basics</h3>
+                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.
+                    </p>
+                    <div class="courses1-extra">
+                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
+                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
+                    </div>
+                    <button class="courses1-read-more">Read More</button>
+                    <button class="courses1-button">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" style="padding-bottom: 60px;background-color: rgb(245, 245, 245);"></div>
     <section class="about-drones">
+        <center><h2>About Our Drones</h2></center>
         <div class="drones-container">
             <div class="drones-image">
-                <img src="./images/drones/drone-about.png" alt="Drone Image" />
+                <img src="./images/about.jpg" alt="Drone Image" />
             </div>
             <div class="drones-content">
-                <h2>About Our Drones</h2>
+               
                 <p>
                     Our state-of-the-art drones are built to deliver precision, efficiency, and versatility for a wide
                     range of applications. Designed with cutting-edge technology and robust features, our drones are
@@ -244,68 +376,6 @@
             </div>
         </div>
     </section>
-
-
-    <!--Courses-->
-    <div id="courses" style="padding-bottom: 40px;background-color: aliceblue;"></div>
-    <div class="courses1">
-        <h2>Courses</h2>
-        <div class="courses1-container">
-            <div class="courses1-card" data-aos="fade-down">
-                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
-                <div class="course1-content">
-                    <h3 class="courses1-title">Drone Basics</h3>
-                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
-                    <div class="courses1-extra">
-                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
-                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
-                    </div>
-                    <button class="courses1-read-more">Read More</button>
-                    <button class="courses1-button">Enroll Now</button>
-                </div>
-            </div>
-            <div class="courses1-card" data-aos="fade-down">
-                <img src="./images/drones/inc.png" alt="Aerial Photography" class="courses1-image">
-                <div class="course1-content">
-                    <h3 class="courses1-title">Arial Photography</h3>
-                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
-                    <div class="courses1-extra">
-                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
-                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
-                    </div>
-                    <button class="courses1-read-more">Read More</button>
-                    <button class="courses1-button">Enroll Now</button>
-                </div>
-            </div>
-            <div class="courses1-card" data-aos="fade-down">
-                <img src="./images/drones/map.png" alt="Drone Programming" class="courses1-image">
-                <div class="course1-content">
-                    <h3 class="courses1-title">Drone Programming</h3>
-                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
-                    <div class="courses1-extra">
-                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
-                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
-                    </div>
-                    <button class="courses1-read-more">Read More</button>
-                    <button class="courses1-button">Enroll Now</button>
-                </div>
-            </div>
-            <div class="courses1-card" data-aos="fade-down">
-                <img src="./images/drones/arail.png" alt="Drone Basics" class="courses1-image">
-                <div class="course1-content">
-                    <h3 class="courses1-title">Drone Basics</h3>
-                    <p class="courses1-description">Learn the fundamentals of drones, their parts, and how they work.</p>
-                    <div class="courses1-extra">
-                        <p class="courses1-description">Learn to program drones for autonomous operations.</p>
-                        <p class="courses1-description">Master drone techniques to optimize performance.</p>
-                    </div>
-                    <button class="courses1-read-more">Read More</button>
-                    <button class="courses1-button">Enroll Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--Video-->
     <div class="full-video-container" data-aos="fade-down">
         <video class="full-video" autoplay muted loop>
@@ -321,44 +391,7 @@
         </div>
     </div>
 
-    <!--About-->
-    <div id="about"></div>
-    <br>
-    <br>
-    <br>
-    <div class="about">
-        <h2>About Us</h2>
 
-        <section class="about-section" data-aos="fade-down">
-            <div class="content">
-                <h3>Who We Are</h3>
-                <p>At NextGen Drones, we redefine possibilities with cutting-edge drone technology. From breathtaking
-                    aerial photography to precision inspections, we deliver innovative solutions to elevate your vision.
-                </p>
-            </div>
-            <div class="image">
-                <img src="./images/drones/drone2.png" alt="Flying Drone Animation">
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="feature" data-aos="fade-down">
-                <img src="./images/drones/arail.png" alt="Aerial Photography">
-                <h3>Aerial Photography</h3>
-                <p>Capture stunning landscapes and moments from above.</p>
-            </div>
-            <div class="feature" data-aos="fade-down">
-                <img src="./images/drones/inc.png" alt="Inspection Services">
-                <h3>Inspection Services</h3>
-                <p>Enhance safety and efficiency with precision aerial inspections.</p>
-            </div>
-            <div class="feature" data-aos="fade-down">
-                <img src="./images/drones/map.png" alt="Mapping and Surveys">
-                <h3>Mapping & Surveys</h3>
-                <p>Accurate data collection for planning and development.</p>
-            </div>
-        </section>
-    </div>
 
     <div id="contact"></div>
     <br>
@@ -393,6 +426,7 @@
         </div>
 
     </div>
+
 
     <!--Footer-->
     <footer class="footer">
@@ -484,37 +518,20 @@
         ]
     });
 
-    $('.banners').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true,
-        fade: true,
-
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0',
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+  
 </script>
 
-
+<script>
+    
+    // Handle navbar scroll effect
+    window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("mynav");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 
 </html>

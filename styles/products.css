@@ -325,3 +325,41 @@ main {
   text-decoration: underline;
   background-color: white;
 }
+/* WhatsApp Icon */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right of the screen */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Adjust size */
+  height: 60px; /* Adjust size */
+  background-color: #25d366; /* WhatsApp green background */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-icon img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transform: scale(1.5);
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-icon img {
+    width: 25px;
+    height: 25px;
+  }
+}
