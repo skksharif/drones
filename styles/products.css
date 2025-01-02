@@ -153,7 +153,7 @@ main {
 /* Ensuring h3 text is the same length with ellipsis */
 .product-card h3 {
   font-size: 1.2rem; /* Slightly reduced font size */
-  color: #ff0000;
+  color: #a51c24;
   margin-bottom: 8px;
   margin-top: 6px;
   text-align: center;
@@ -185,7 +185,7 @@ main {
   padding: 4px 6px; /* Adjusted padding */
   font-size: 0.85rem; /* Reduced font size */
   background-color: white;
-  color: red;
+  color: #a51c24;
   border: 1px solid #b20000;
   border-radius: 4px; /* Slightly reduced border radius */
   cursor: pointer;
