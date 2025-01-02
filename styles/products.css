@@ -45,118 +45,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* Grid Container */
-.grid-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items:start;
-  flex-wrap: wrap;
-}
-
-/* Card Styles */
-.card {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: start;
-    max-width: 300px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card h3 {
-    font-size: 1.2rem;
-    color: #a51c24;
-    margin: 5px 0 5 0;
-}
-
-.card  {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 20px;
-    padding: 0 15px;
-    line-height: 1.5;
-}
-.card p{
-  margin: 0;
-}
-
-.card ul{
-  list-style: none;
-  margin-bottom: 5px;
-}
-.product-description {
-  display: none; /* Hidden by default */
-  transition: all 0.3s ease-in-out;
-}
-
-.products-read-more {
-  display: block;
-  margin: 0px 0 10px 0;
-  padding: 0;
-  background-color: transparent;
-  color: #a51c24;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  font-size: 0.9rem;
-}
-.products-read-more:hover{
-  text-decoration: underline;
-  background-color: white;
-}
-
-
-.card .btn {
-    display: inline-block;
-    background: #a51c24;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out;
-}
-
-.card .btn:hover {
-    background: #a51c24;
-}
-
-@media (max-width: 768px) {
-    .section h2 {
-        font-size: 1.8rem;
-    }
-
-    .section p {
-        font-size: 0.95rem;
-    }
-
-    .card h3 {
-        font-size: 1rem;
-    }
-
-    .card p {
-        font-size: 0.85rem;
-    }
-
-    .card .btn {
-        font-size: 0.85rem;
-    }
-}
 .fixed-social-links {
   position: fixed;
   top: 50%;
@@ -219,13 +107,14 @@ main {
     gap: 10px; /* Reduce spacing between icons */
   }
 }
-
-/* General Layout */
+.products-page{
+  margin: 0 auto;
+}
 .card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -233,27 +122,27 @@ main {
 .product-card {
   width: 300px;
   height: auto;
-  margin: 20px 10px;
+  margin: 15px 8px; /* Reduced margin for better spacing on smaller screens */
   background: #fff;
-  padding: 15px 10px;
+  padding: 12px 10px; /* Adjusted padding for a cleaner look */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px; /* Slightly reduced border radius */
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease !important;
 }
 
 .product-card:hover {
-  transform: translateY(-10px) !important;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-8px) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .product-card img {
   width: 100%;
-  height: 250px;
+  height: 220px; /* Reduced image height for better proportions */
   object-fit: contain;
 }
 
@@ -261,37 +150,44 @@ main {
   transform: scale(1.05);
 }
 
-.product-card h3{
-  font-size: 1.3rem;
+/* Ensuring h3 text is the same length with ellipsis */
+.product-card h3 {
+  font-size: 1.2rem; /* Slightly reduced font size */
   color: #ff0000;
-  margin-bottom: 10px;
-  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 6px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Single line of text with ellipsis */
+  width: 100%; /* Ensure it takes the full width of the container */
 }
 
+/* Styling for other text elements */
 .product-card .price {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Adjusted font size */
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
 .product-card .details {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjusted font size */
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: left;
   list-style: none;
 }
 
 .product-card .btn {
   display: block;
-  width: calc(50% - 30px);
-  padding: 5px;
-  font-size: 14px;
+  width: calc(50% - 20px); /* Adjusted button width */
+  padding: 4px 6px; /* Adjusted padding */
+  font-size: 0.85rem; /* Reduced font size */
   background-color: white;
   color: red;
   border: 1px solid #b20000;
-  border-radius: 5px;
+  border-radius: 4px; /* Slightly reduced border radius */
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -308,6 +204,7 @@ main {
   display: none; /* Hidden by default */
   transition: all 0.3s ease-in-out;
 }
+
 .read-more-button {
   display: block;
   margin: 5px 0;
@@ -317,7 +214,7 @@ main {
   cursor: pointer;
   text-align: left;
   padding: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Adjusted font size */
   text-decoration: none;
 }
 
@@ -325,6 +222,43 @@ main {
   text-decoration: underline;
   background-color: white;
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%; 
+    margin: 10px 1%;
+  }
+
+  .product-card img {
+    height: 100px;
+  }
+  .product-card h3 {
+    font-size: 1rem; 
+    color: #ff0000;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  
+  .product-card .btn {
+    width: 80px; /* Adjusted button width */
+    padding: 4px 6px; /* Adjusted padding */
+    font-size: 0.85rem; /* Reduced font size */
+    background-color: white;
+    color: red;
+    border: 1px solid #b20000;
+    border-radius: 4px; /* Slightly reduced border radius */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .product-card .btn:hover {
+    background: #b30c00;
+    color: #fff;
+  }
+}
+
 /* WhatsApp Icon */
 .whatsapp-icon {
   position: fixed;
