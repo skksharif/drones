@@ -108,7 +108,7 @@
 }
 .courses1 h2 {
   font-size: 2.2rem;
-  color: #a12d33;
+  color: #a51c24;
   text-transform: uppercase;
   margin-bottom: 15px;
   position: relative;
@@ -159,7 +159,7 @@
 
 .courses1-title {
   font-size: 1.5rem;
-  color: #ff0000;
+  color: #a51c24;
   padding: 5px 10px;
 }
 
@@ -177,8 +177,8 @@
   padding: 8px 10px;
   font-size: 14px;
   background-color: white;
-  color: red;
-  border: 1px solid #b20000;
+  color: #a51c24;
+  border: 1px solid #a51c24;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
@@ -188,7 +188,7 @@
 }
 
 .courses1-button:hover {
-  background: #b30c00;
+  background: #a51c24;
   color: #fff;
 }
 
