@@ -186,20 +186,14 @@
   margin: 5px auto;
   margin-top: 8px;
 }
-
 .courses1-button:hover {
   background: #a51c24;
   color: #fff;
 }
-
-
-
-
 .courses1-extra {
   display: none; /* Hidden by default */
   transition: all 0.3s ease-in-out;
 }
-
 .courses1-read-more {
   display: block;
   margin: 5px 0;
@@ -215,8 +209,6 @@
   text-decoration: underline;
   background-color: white;
 }
-
-
 .border-design {
   position: relative;
   margin-top: -10px;
