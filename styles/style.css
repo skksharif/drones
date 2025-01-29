@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arimo", sans-serif;
+  font-family: "poppins", sans-serif;
   scroll-behavior: smooth;
+  letter-spacing: 0.1px;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
   align-items: center;
   background-color: #a12d33; /* Dark red background */
   color: white;
-
   height: 40px;
   overflow: hidden;
   position: relative;
@@ -44,6 +44,17 @@ marquee {
   flex: 1;
   white-space: nowrap;
   color: white;
+}
+.banner-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: #a12d33; /* Dark red background */
+  color: white;
+  height: 40px;
+  margin-top: -4px;
 }
 @media (max-width: 786px) {
   marquee {
@@ -79,34 +90,28 @@ marquee {
 }
 /* Services */
 .services {
-  padding: 20px 20px;
-  background-color: rgb(245, 245, 245);
+  padding: 0 20px;
   text-align: center;
   padding-bottom: 50px;
 }
 
 .services h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   color: #a12d33;
   text-transform: uppercase;
   margin-bottom: 15px;
   position: relative;
 }
 
-.services h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #a12d33;
-  margin: 10px auto;
-}
 .service-items {
+  max-width: 1400px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 .flip-card {
+  margin: 0 6vw 3vw 6vw;
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -173,9 +178,27 @@ marquee {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+  .services {
+    padding: 0 10px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .service-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 786px) {
+  .flip-card {
+    margin: 0 20px 10px 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
   }
 }
 
@@ -225,20 +248,27 @@ marquee {
 }
 @media (max-width: 768px) {
   .counter-container {
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .counter-item {
+    justify-content: left;
+    align-items: center;
   }
 
   .counter-item {
     width: 160px;
-    padding: 10px;
+    padding: 5px;
   }
 
   .counter-item i {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .counter-num h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: left;
   }
 
@@ -606,13 +636,13 @@ button:hover {
 }
 
 .social-cards-container {
+  max-width: 1450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-  margin: 50px 0 0 0;
+  margin: 20px auto;
+  margin-top: 50px;
 }
 
 .social-card {
@@ -621,7 +651,7 @@ button:hover {
   box-shadow: none;
   border-radius: 15px;
   text-align: start;
-  padding: 20px;
+  padding: 30px 20px;
   width: 320px;
 }
 
@@ -646,7 +676,9 @@ button:hover {
 .social-action-btn {
   width: 100px;
   padding: 10px 20px;
+  text-decoration: none;
   font-size: 14px;
+  margin: 10px 0;
   color: #fff;
   background-color: none;
   background: none;
@@ -659,4 +691,67 @@ button:hover {
 .social-action-btn:hover {
   background-color: #8f0000;
   color: white;
+}
+@media (max-width: 1100px) {
+  .social-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  .social-card {
+    padding: 30px 10px;
+  }
+}
+.clubs {
+  padding: 0 30px;
+  margin: 20px;
+}
+.clubs h2 {
+  font-size: 2.1rem;
+  color: #a12d33;
+  text-transform: uppercase;
+}
+.clubs-container {
+  display: grid;
+  margin: 10px auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1450px;
+}
+.club-card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.gradient-card {
+  background: linear-gradient(to top, black, transparent);
+  color: white;
+}
+.club-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.red-title {
+  color: #a00000;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clubs-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .clubs-container {
+    grid-template-columns: 1fr;
+  }
+  .club-card {
+    text-align: center;
+    margin-top: 10px;
+  }
 }

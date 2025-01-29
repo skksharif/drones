@@ -40,29 +40,28 @@ document.querySelectorAll('.read-more-button').forEach(button => {
   });
 });
 
-// Function to increment counters
 const counters = document.querySelectorAll('.counter');
+
 const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const counter = entry.target;
         const target = +counter.getAttribute('data-target');
         const increment = target / 200;
-
         let count = 0;
+
         const updateCounter = () => {
           if (count < target) {
             count += increment;
-            counter.textContent = Math.ceil(count) + '+'; // Append '+' to the count
+            counter.textContent = Math.ceil(count) + '+';
             setTimeout(updateCounter, 10);
           } else {
-            counter.textContent = target + '+'; // Ensure it ends with the exact target and '+'
+            counter.textContent = target + '+';
           }
         };
 
         updateCounter();
-        observer.unobserve(counter); // Stop observing once animation is done
       }
     });
   },
@@ -70,5 +69,4 @@ const observer = new IntersectionObserver(
 );
 
 // Attach observer to each counter
-counters.forEach(counter => observer.observe(counter));
-
+counters.forEach((counter) => observer.observe(counter));
