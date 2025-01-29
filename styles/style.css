@@ -720,7 +720,7 @@ button:hover {
 .clubs-container {
   display: grid;
   margin: 10px auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   max-width: 1450px;
 }
@@ -733,9 +733,14 @@ button:hover {
   background: linear-gradient(to top, black, transparent);
   color: white;
 }
+
+.club-card p{
+  letter-spacing: 0.2px;
+}
 .club-title {
   font-size: 18px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .red-title {
   color: #a00000;
@@ -754,5 +759,10 @@ button:hover {
   .club-card {
     text-align: center;
     margin-top: 10px;
+  }
+  .clubs h2 {
+    font-size: 1.8rem;
+    color: #a12d33;
+    text-transform: uppercase;
   }
 }
