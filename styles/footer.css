@@ -49,6 +49,24 @@
   color: #8d88f8;
 }
 
+.footer .terms-link {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer .terms-link:hover,
+.footer .terms-link:focus-visible {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.footer .terms-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
 .footer .social-icons {
   display: flex;
   align-items: center;

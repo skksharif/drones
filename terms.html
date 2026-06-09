@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms &amp; Conditions | AgroSky Drone Aspirant</title>
+    <meta name="description" content="View the Terms and Conditions for AgroSky Drone Aspirant Private Limited.">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/terms.css">
+</head>
+
+<body>
+    <header>
+        <h1>AGROSKY DRONE ASPIRANT PRIVATE LIMITED</h1>
+        <p>(Next Gen Drones)</p>
+    </header>
+
+    <div class="navbar" id="mynav">
+        <a href="./index.html" id="optional">
+            <img src="./images/logo.png" alt="AgroSky Drone Aspirant logo">
+            <h2 class="logo-text">NEXTGENDRONES</h2>
+        </a>
+        <div class="responsive">
+            <button class="menu-icon" type="button" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./index.html#services">Services</a>
+            <a href="./index.html#courses">Courses</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./index.html#about">About</a>
+            <a class="active" href="./terms.html" aria-current="page">Terms &amp; Conditions</a>
+        </nav>
+    </div>
+
+    <main class="terms-page">
+        <div class="terms-header">
+            <h2>Terms &amp; Conditions</h2>
+            <p>
+                The document is displayed below.
+                <a href="./docs/terms_conditions.pdf" target="_blank" rel="noopener noreferrer">
+                    Open PDF in a new tab
+                </a>
+            </p>
+        </div>
+
+        <iframe class="pdf-viewer" src="./docs/terms_conditions.pdf" title="AgroSky Terms and Conditions PDF">
+            <p>
+                Your browser cannot display PDFs.
+                <a href="./docs/terms_conditions.pdf">Download the Terms and Conditions PDF</a>.
+            </p>
+        </iframe>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>We provide drone training, products, and services powered by modern drone technology.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>Sowbhagya Nagar, Vuyyuru</li>
+                        <li>Email: info@agroskydroneaspirant.com</li>
+                        <li>Phone: +91 9392466177</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a class="terms-link" href="./terms.html" aria-current="page">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agrosky Drone Aspirant Private Limited | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("mynav");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>

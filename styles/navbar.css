@@ -91,6 +91,18 @@ header p {
   color: #f5f5f5;
 }
 
+.navbar nav a.active,
+.navbar nav a[aria-current="page"] {
+  background: #a51c24;
+  color: #ffffff;
+}
+
+.navbar.scrolled nav a.active,
+.navbar.scrolled nav a[aria-current="page"] {
+  background: #ffffff;
+  color: #a51c24;
+}
+
 /* Mobile Menu */
 .menu-icon {
   display: none;
